@@ -1,0 +1,76 @@
+.card-section {
+    width: 60%;
+    margin:56px auto 0 auto;
+
+    .card-section-title {
+        h4 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: .25px;
+            color: rgba(0,0,0,.87);
+            font-family: Gothic A1;
+            font-weight: 400;
+        }
+
+    }
+    .card {
+        width: 368px;
+        height: 296px;
+        padding: 24px;
+        margin-right: 40px;
+        border-radius: 8px;
+        background-color: #fff;
+        min-width: 311px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.07);
+        transition: 550ms;
+        &:hover {
+            box-shadow: 5px 5px 10px rgba(0,0,0,.7);
+        }
+    }
+
+
+    .card-icon {
+        font-size: 40px;
+        color: #099a71;
+        margin-bottom: 24px;
+        margin-right: 8px;
+    }
+
+    .card-title {
+        margin-bottom: 16px;
+        line-height: 24px;
+        letter-spacing: .15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .fa-check {
+        margin: 6px 0 0 0;
+        color: #099a71;
+    }
+
+    .card-text {
+        background-size: 20px;
+        background-position-y: top;
+        padding: 0 16px;
+        color: rgba(0,0,0,.6);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .25px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+    
+    .card-link {
+        transition: all .3s cubic-bezier(.23,1,.32,1);
+        color: #099a71;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .1px;
+        font-weight: 600;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+}

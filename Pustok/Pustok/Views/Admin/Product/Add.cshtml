@@ -1,0 +1,40 @@
+﻿@model ProductAddViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <a asp-controller="product" asp-action="index" class="btn btn-secondary mb-3">Return to List</a>
+        <h2>Add New product</h2>
+        <form asp-controller="product" asp-action="add" method="POST">
+            <!-- For bakcend !-->
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input placeholder="Enter title" class="form-control" asp-for="Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea placeholder="Enter Description" class="form-control" asp-for="Description"></textarea> <!-- For bakcend !-->
+            </div>
+            <div class="form-group">
+                <label asp-for="Color"></label>
+                <input placeholder="Enter color" class="form-control" asp-for="Color" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Size"></label>
+                <input placeholder="Enter size" class="form-control" asp-for="Size" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Price"></label>
+                <input placeholder="Enter Price" class="form-control" asp-for="Price" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button> <!-- For bakcend !-->
+        </form>
+    </div>
+
+</body>
+</html>

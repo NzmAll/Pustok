@@ -1,0 +1,125 @@
+.footer-container {
+    width: 60%;
+    margin: 144px auto 0;
+
+    align-items: center;
+
+    .footer-box {
+        width: 25%;
+    }
+    
+    img {
+        height: 56px;
+        width: auto;
+    }
+
+    .phone-number, .email {
+        padding: 16px;
+        color: rgba(0,0,0,.87);
+    }
+
+    .footer-main-prg {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .25px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: rgba(0,0,0,.87);
+    }
+
+    .footer-secondary-prg {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: .4px;
+        color: rgba(0,0,0,.6);
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+}
+
+.footer-nav {
+
+    padding: 36px 0px 40px;
+    .container {
+        margin: 0px 325px;
+        padding: 0px 24px;
+        ul {
+
+            list-style: none;
+            li {
+                p {
+                    color: rgba(0,0,0,.87);
+                    padding: 16px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: .1px;
+                    font-weight: 600;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                }
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px 16px;
+                    -webkit-transition: all .3s cubic-bezier(.23,1,.32,1);
+                    transition: all .3s cubic-bezier(.23,1,.32,1);
+                    color: rgba(0,0,0,.6);
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: .25px;
+                    cursor: pointer;
+                }
+            }
+
+            .social-icons {
+                a{
+                    display: inline;
+                    margin-right: 10px;
+                }
+              }
+            
+        }
+    }
+}
+
+.footer_copyright {
+    height: 64px;
+    padding: 24px 0;
+    border-top: 1px solid #edefed;
+
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0 325px;
+
+        .footer__copyright__content {
+
+            color: rgba(0,0,0,.38);
+
+            p {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: .4px;
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                color: rgba(0,0,0,.38);
+            }
+        }
+    }
+}

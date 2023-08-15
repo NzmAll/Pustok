@@ -1,0 +1,54 @@
+﻿@model List<ProductListItemViewModel>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="mb-3">
+            <a asp-controller="product" asp-action="add" class="btn btn-primary">Add new product</a>
+        </div>
+        <h2>Products</h2>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int rowCounter = 1;
+                }
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@(rowCounter++)</td>
+                        <td>@product.Name</td>
+                        <td>@product.Description</td>
+                        <td>@product.Color</td>
+                        <td>@product.Size</td>
+                        <td>@product.Price</td>
+                        <td>
+                            <a asp-controller="product" asp-action="update" asp-route-id="@product.Id" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit</a>
+                            <button type="submit" class="btn btn-sm btn-danger" form="remove-form-@product.Id">Remove</button>
+
+                            <form asp-controller="product" asp-action="delete" method="POST" class="d-none" id="remove-form-@product.Id">
+                                <input type="hidden" name="id" value="@product.Id">
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
